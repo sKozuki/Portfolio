@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Stud-Bud</title>
+  <link href="./Mainpage/scss/main.scss" rel ="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--header starts here-->
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <h1>Stud-But</h1>
+        <nav>
+          <ul>
+            <li><a href="./Index.html" class="task">Tasks</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="./stopwatch.html" class="StopWatch"> Stopwatch </a>
+            </li>
+            <li><a href="./timer.html" class="timer">Timer</a></li>
+            <li><a href="./music.html">Music</a></li>
+          </ul>
+        </nav>
+
+  </header>
+  <!--header ends here-->
+
+  <!--main starts here-->
+
+  <main>
+    <div id='page1' class="page-container">
+      <h1>Tasks</h1>
+      <p>Fill in the blanks to create new task</p>
+      <div id="task-grid">
+        <form id="taskform">
+          <label for="task">Task:</label>
+          <input type="text" name="task" id="taskInput" required>
+
+          <!-- Date input -->
+          <label for="dueDate">Due Date: </label>
+          <input type="date" name="dueDate" id="dueDateInput">
+
+          <!-- Time input -->
+          <label for="completionTime">Completion Time: </label>
+          <input type="time" name="completionTime" id="completionTimeInput">
+
+          <label for="estimatedTime">Estimated completion time (in mins):</label>
+          <input type="number" name="estimatedTime" id="estimatedTimeInput">
+          <!-- Priority -->
+
+
+          <label for="priority">Task Priority:</label>
+          <select name="prority" id="priorityInput">
+            <option value="">Select one</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+
+          <br>
+
+          <button type="submit">Submit</button>
+        </form>
+        <div id="tasklist">
+          <p id="emptyList">You have not added any tasks yet.</p>
+          <ul></ul>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="./Mainpage/Index.js">
+    </script>
+  </main>
+  <!-- main ends here-->
+</body>
+
+</html>
