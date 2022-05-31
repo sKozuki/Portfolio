@@ -44,11 +44,11 @@
       width: 100px;
       height: 60px;
       position: absolute;
-      background-color: red;
+      background-color: rgb(145, 222, 253);
       border-radius: 5px;
       border: 0;
       font-size: 20px;
-      color: white;
+      color: black;
   }
   button.reset:active{
       transform: scale(0.9);
