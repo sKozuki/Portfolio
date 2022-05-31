@@ -40,21 +40,21 @@ body{
     height: 100%;
     margin: 0;
 }
-.resource{
+.resources{
     display: flex;
     height: 100%;
 }
-.resource *{
+.resources *{
     font-family: sans-serif;
 }
-.resource__sidebar{
+.resources__sidebar{
     border-right: 2px solid #dddddd;
     flex-shrink: 0;
     overflow-y: auto;
     padding: 1em;
     width: 300px;
 }
-.resource__add{
+.resources__add{
     background: #009578;
     border: none;
     border-radius: 7px;
@@ -66,49 +66,49 @@ body{
     padding: 0.75em 0;
     width: 100%;
 }
-.resource__add:hover{
+.resources__add:hover{
     background: #00af8c;
 }
-.resource__list-item{
+.resources__list-item{
     cursor: pointer;
 }
-.resource__list-item--selected{
+.resources__list-item--selected{
     background: #eeeeee;
     border-radius: 7px;
     font-weight: bold;
 }
-.resource__small-title,
-.resource__small-updates{
+.resources__small-title,
+.resources__small-updates{
     padding: 10px;
 }
-.resource__small-title{
+.resources__small-title{
     font-size: 1.2em;
 }
-.resource__small-body{
+.resources__small-body{
     padding: 0 10px;
 }
-.resource__small-updated{
+.resources__small-updated{
     color: #aaaaaa;
     font-style: italic;
     text-align: right;
 }
-.resource__preview{
+.resources__preview{
     display: flex;
     flex-direction: column;
     padding: 2em 3em;
     flex-grow: 1;
 }
-.resource__title,
-.resource__body{
+.resources__title,
+.resources__body{
     border: none;
     outline: none;
     width: 100%;
 }
-.resource__title{
+.resources__title{
     font-size: 3em;
     font-weight: bold;
 }
-.resource__body{
+.resources__body{
     flex-grow: 1;
     font-size: 1.2em;
     line-height: 1.5;
