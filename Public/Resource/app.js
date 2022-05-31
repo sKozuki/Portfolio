@@ -1,5 +1,5 @@
-import resourceView from "./resourceView.js";
-import resourceAPI from "./resourceAPI.js";
+import resourceView from "./resourceView";
+import resourceAPI from "./resourceAPI";
 
 export default class App{
     constructor(root){
