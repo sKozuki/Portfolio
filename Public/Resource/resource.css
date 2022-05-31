@@ -1,0 +1,125 @@
+/*Header Styling*/
+*{
+    margin:0;
+    padding: 0;
+  }
+  .container{
+    background-color: #DCF8FF;
+    padding-left: 5%;
+    padding-right: 5%;
+  
+  }
+  .h1{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+  nav{
+    flex: 1;
+    padding-left: 60px; 
+  }
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /*Main Styling*/
+
+  body{
+      padding: 0;
+      background-color: #DCF8FF;
+  }
+  button.reset{
+      width: 100px;
+      height: 60px;
+      position: absolute;
+      background-color: red;
+      border-radius: 5px;
+      border: 0;
+      font-size: 20px;
+      color: white;
+  }
+  button.reset:active{
+      transform: scale(0.9);
+  }
+  ::selection{
+      background-color: rgb(181, 249, 248);
+      color: black;
+  }
+  div.main{
+      width: 100%;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+div.main div.create{
+    height: 70px;
+    width: 85%;
+    background: rgb(17, 36, 255);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0 0 20px 0px #000000a1;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+div.main div.create input{
+    font-size: 20px;
+    width: 170px;
+    background-color: transparent;
+    height: 60px;
+    border: 0;
+    outline: 0;
+    border-bottom: 5px solid rgb(145, 222, 253);
+    margin-left: 10px;
+    color: white;
+}
+div.main div.create button{
+    width: 20%;
+    margin-left: 10px;
+    background-color: rgb(145, 222, 253);
+    border-radius: 5px;
+    border: 0;
+    font-size: 20px;
+    color: white;
+}
+div.main div.create button:active{
+    transform: scale(0.9);
+}
+div.list{
+    width: 100%;
+}
+div.list ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+div .list ul li{
+    height: 70px;
+    width: 85%;
+    background: rgb(17, 36, 255);
+    list-style: none;
+    margin: 5px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 20px;
+}
+div .list ul li:last-child{
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
