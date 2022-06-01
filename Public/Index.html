@@ -31,7 +31,7 @@
 
   <main>
     <div id='page1' class="page-container">
-      <h1>Tasks</h1>
+      <button class="addColumn" id="add-column">+ New Column</button>
       <p>Fill in the blanks to create new task</p>
       <div id="task-grid">
         <form id="taskform">
@@ -46,7 +46,7 @@
           <label for="completionTime">Completion Time: </label>
           <input type="time" name="completionTime" id="completionTimeInput">
 
-          <label for="estimatedTime">Estimated completion time (in mins):</label>
+          <label for="estimatedTime">Estimated completion time (in hrs):</label>
           <input type="number" name="estimatedTime" id="estimatedTimeInput">
           <!-- Priority -->
 
@@ -63,9 +63,35 @@
 
           <button type="submit">Submit</button>
         </form>
+       
+        <!--kaban board starts here-->
+
+        <div class="kanban" id="kanban">
+          <div class="kanban__column">
+            <input type="text" placeholder="Title" value="To do" id="title">
+            <div class="kanban__items">
+              <div class="kanban__dropzone"></div>
+            </div>
+          </div> 
+
+          <div class="kanban__column">
+            <input type="text" placeholder="Title" value="In progress" id="title">
+            <div class="kanban__items">
+              <div class="kanban__dropzone"></div>
+            </div>
+          </div> 
+
+          <div class="kanban__column">
+            <input type="text" placeholder="Title" value="Done" id="title">
+            <div class="kanban__items">
+              <div class="kanban__dropzone"></div>
+            </div>
+          </div> 
+
         <div id="tasklist">
           <p id="emptyList">You have not added any tasks yet.</p>
           <ul></ul>
+
         </div>
       </div>
 
